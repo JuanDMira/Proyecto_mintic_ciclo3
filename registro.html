@@ -12,12 +12,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="" id="form_registrar_usuario">
-        <input type="text" id="nombre_usuario_input" required="required">
-        <input type="number" id="anoNacimiento_usuario _input" min="1900" max="2021" required="required">
-        <input type="password" id="contrasena_usuario _input" required="required">
-        <input type="password" id="contrasena_contraseña _input" required="required">
-        <button id="enviar_registro">Enviar</button>
+    <form action="" id="form_registrar_usuario" class="formulario">
+        <section class="form">
+            <h2>Resgistro</h2>
+            <div class="grup_form">
+                <input type="text" id="nombre_usuario_input" required="required" placeholder="Nombre">
+                <!-- <label for="nombre_usuario_input">Nombre</label> -->
+            </div>
+
+            <div class="grup_form">
+                <input type="number" id="anoNacimiento_usuario _input" min="1900" max="2021" required="required" placeholder="Año">
+                <!-- <label for="anoNacimiento_usuario _input"> Año </label> -->
+            </div>
+
+            <div class="grup_form">
+                <input type="password" id="contrasena_usuario _input" required="required" placeholder="Contraseña">
+                <!-- <label for="contrasena_usuario _input">Contraseña</label> -->
+            </div>
+
+            <div class="grup_form">
+                <input type="password" id="contrasena_contraseña _input" required="required" placeholder="Confirmar contraseña" >
+                <!-- <label for="contrasena_contraseña _input">Contraseña</label> -->
+            </div>
+            <button id="enviar_registro">Registrarme</button>
+        </section>        
     </form>
 </body>
 </html>

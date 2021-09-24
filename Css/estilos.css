@@ -14,6 +14,11 @@
     padding:0;
     margin:0;
 }
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
 header{
     font-size: 20px;
     background-color:var(--rojo_rosa);
@@ -30,22 +35,92 @@ header{
     text-decoration: none;
     color: var(--blanco_verd);
 }
-#btn_abrir_registro {
+#btn_abrir_registro, #enviar_registro {
     padding: 8px 10px;
     background-color: var(--azul_cloro);
     border-radius: 5px;
     border: none;
 }
+#btn_abrir_registro:hover, #enviar_registro:hover{
+    background-color: var(--azul_logo);
+    transition: all 0.5s;
+    color: var(--blanco_verd);
+}
 #btn_abrir_registro a{
     font-size: 18px;
 }
+.main_home, .wel_home{
+    margin: 70px auto;
 
+}
+h1{
+    /* margin: 120px au; */
+    text-align: center; 
+    color: var(--azul_verde);
+}
+p{
+    text-align: center;
+    padding: 15px 0;
+}
 #footer_home{
     background-color: var(--azul_logo);
-    position: relative;
-    top: 88vh;
-    padding: 13px 0;
     display: flex;
+    align-self: flex-end;
+    width: 100%;
+    /* position: relative; */
+    /* top: 88vh; */
+    padding: 13px 0;
     align-items: center;
     justify-content: center;
+}
+
+/* index formulario */
+
+.formulario{
+    height: 650px;
+    display: flex;
+    background-color: var(--azul_cloro);
+    padding: 40px 40px;
+    box-shadow: 0 0 6px 0 var(--azul_verde);
+    border-radius: 10px;
+    margin: 30px auto;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--azul_verde);
+}
+.form{
+    width: 100%;
+    margin: auto;
+}
+.formulario .grup_form{
+    position: relative;
+    margin: 45px;
+}
+input{
+    background: none;
+    /* color: black; */
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--azul_verde);
+}
+#enviar_registro{
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: var(--azul_logo);
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--azul_verde);
+}
+/* este seudo elemento sirve para cambiar el color predefinido del placeholder */
+::placeholder{
+    color: var(--azul_verde);
 }
